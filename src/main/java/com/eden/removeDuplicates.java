@@ -21,14 +21,14 @@ public class removeDuplicates {
         if(nums.length == 1){
             return 1;
         }
-        int removeIndex = 0;
+        int slow = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[removeIndex] != nums[i]) {
-                removeIndex++;
-                nums[removeIndex] = nums[i];
+            if (nums[slow] != nums[i]) {
+                slow++;
+                nums[slow] = nums[i];
             }
         }
-        return removeIndex + 1;
+        return slow + 1;
     }
 
     public static void printArray(int[] nums) {
