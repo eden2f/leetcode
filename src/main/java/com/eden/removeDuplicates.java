@@ -22,7 +22,7 @@ public class removeDuplicates {
             return 1;
         }
         int slow = 0;
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {
             if (nums[slow] != nums[i]) {
                 slow++;
                 nums[slow] = nums[i];
