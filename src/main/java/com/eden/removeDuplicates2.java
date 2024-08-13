@@ -1,5 +1,8 @@
 package com.eden;
 
+/**
+ * 80. 删除有序数组中的重复项 II
+ */
 public class removeDuplicates2 {
 
     public static void main(String[] args) {
