@@ -93,6 +93,8 @@ public class canJump {
                 if (rightmost >= nums.length - 1) {
                     return true;
                 }
+            } else {
+                break;
             }
         }
         return false;
